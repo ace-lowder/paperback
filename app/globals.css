@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-  @apply text-3xl;
-  @apply font-bold;
+html {
+  font-size: 14px;
 }
 
-a {
-  @apply text-blue-700;
-  @apply underline;
+.container {
+  @apply max-w-[1400px];
+  @apply mx-auto;
 }

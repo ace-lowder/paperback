@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Archivo } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
+
+const archivo = Archivo({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Paperback",
@@ -13,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`${archivo.className} antialiased`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
