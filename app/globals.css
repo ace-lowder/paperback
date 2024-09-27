@@ -5,8 +5,3 @@
 html {
   font-size: 14px;
 }
-
-.container {
-  @apply max-w-[1400px];
-  @apply mx-auto;
-}
