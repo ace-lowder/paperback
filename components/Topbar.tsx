@@ -5,7 +5,7 @@ const Topbar = () => {
 
   return (
     <div className="bg-secondary text-xs text-white font-bold tracking-wider">
-      <div className="lg:max-w-[1400px] lg:mx-auto mx-8 flex justify-between">
+      <div className="lg:max-w-[1200px] lg:mx-auto mx-8 flex justify-between">
         <div>
           {menuButtons.map((item, index) => (
             <button
